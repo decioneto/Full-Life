@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#header {
+  background-color: #72A5B8;
+  height: 40px;
+  width: 100%;
+}
+
+#header .container {
+  height: 100%;
+}
+
+#header .container .link-bo {
+  float: right;
+  height: 100%;
+}
+
+#header .container .link-bo .btn-bo {
+  height: 100%;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #72A5B8;
+  border: 0;
+  background-color: #fff;
+  padding: 0 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#header .container .link-bo .btn-bo:hover {
+  font-size: 15px;
+}
+
+#home {
+  background-image: url("../lib/images/hero.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+}
+
+#home .navbar .navbar-brand img {
+  width: 100%;
+}
+
+#home .navbar .navbar-collapse .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #72A5B8;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 0;
+}
+
+#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  display: block;
+  background-color: #72a5b8;
+  margin-top: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+  font-weight: 700;
+}
+
+#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  display: block;
+  background-color: #72a5b8;
+  margin-top: 5px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+/*# sourceMappingURL=main.css.map */
