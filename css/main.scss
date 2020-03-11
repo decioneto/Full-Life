@@ -64,7 +64,43 @@ body {
             }
         }
 
+        .navbar-toggler {
+            padding: 15px;
+            background-color: #72A5B8;
+            color: #fff;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 10%;
+            right: 10%;
+            text-align: center;
+            opacity: 0.5;
+            transition: all 0.2s;
+
+            button {
+                background-color: $color;
+                height: 40px;
+                width: 40px;
+                border: 0;
+                border-radius: 50%;
+                color: #ffffff;
+                font-size: 28px;
+            }
+
+            span {
+                display: block;
+                color: $color;
+            }
+
+            &:hover {
+                opacity: 1;
+                text-decoration: none;
+            }
+        }
+
         .navbar-collapse {
+            text-align: right;
 
             .navbar-nav {
 
@@ -77,6 +113,7 @@ body {
                         color: #72A5B8;
                         transition: all 0.3s;
                         padding: 0;
+                        display: inline-block;
                        
 
                         &::after {
