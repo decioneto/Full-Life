@@ -44,35 +44,27 @@ body {
   font-size: 15px;
 }
 
-#home {
-  background-image: url("../lib/images/hero.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 800px;
-}
-
-#home .navbar .navbar-brand img {
+.navbar .navbar-brand img {
   width: 100%;
 }
 
-#home .navbar .navbar-toggler {
+.navbar .navbar-toggler {
   padding: 15px;
   background-color: #72A5B8;
   color: #fff;
 }
 
-#home .navbar .back-to-top {
+.navbar .back-to-top {
   position: fixed;
-  bottom: 10%;
-  right: 10%;
+  bottom: 5%;
+  right: 5%;
   text-align: center;
   opacity: 0.5;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-#home .navbar .back-to-top button {
+.navbar .back-to-top button {
   background-color: #72A5B8;
   height: 40px;
   width: 40px;
@@ -82,25 +74,25 @@ body {
   font-size: 28px;
 }
 
-#home .navbar .back-to-top span {
+.navbar .back-to-top span {
   display: block;
   color: #72A5B8;
 }
 
-#home .navbar .back-to-top:hover {
+.navbar .back-to-top:hover {
   opacity: 1;
   text-decoration: none;
 }
 
-#home .navbar .navbar-collapse {
+.navbar .navbar-collapse {
   text-align: right;
 }
 
-#home .navbar .navbar-collapse .navbar-nav .nav-item {
+.navbar .navbar-collapse .navbar-nav .nav-item {
   margin: 0 10px;
 }
 
-#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
   font-weight: 400;
   color: #72A5B8;
@@ -110,7 +102,7 @@ body {
   display: inline-block;
 }
 
-#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link::after {
   content: "";
   height: 2px;
   width: 100%;
@@ -125,16 +117,16 @@ body {
           transform: scaleX(0);
 }
 
-#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
 
-#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
   font-weight: 700;
 }
 
-#home .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
+.navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active::after {
   content: "";
   height: 2px;
   width: 100%;
@@ -147,5 +139,28 @@ body {
           transform-origin: center;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+#home {
+  position: relative;
+}
+
+#home .title {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: right;
+  color: #72A5B8;
+  text-shadow: 0px 0px 15px #fff;
+}
+
+#home .bg-img {
+  background-image: url(../lib/images/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  top: -120px;
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
