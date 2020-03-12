@@ -10,12 +10,14 @@ $color: #72A5B8;
 
 html {
     scroll-behavior: smooth;
+    transition-delay: 0.3s;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: $regular;
+    overflow-x: hidden;
 }
 
 #header {
@@ -54,6 +56,7 @@ body {
 
         img {
             width: 100%;
+            max-width: 100px;
         }
     }
 
@@ -70,6 +73,7 @@ body {
         text-align: center;
         opacity: 0.5;
         transition: all 0.2s;
+        z-index: 999;
 
         button {
             background-color: $color;
@@ -152,12 +156,24 @@ body {
 #home {
     position: relative;
 
-    .title {
-        font-size: 60px;
+    .title-home {
+        font-size: 50px;
         font-weight: $bold;
         text-align: right;
         color: $color;
         text-shadow: 0px 0px 15px #fff;
+    }
+
+    .text-home {
+        width: 70%;
+        margin-left: auto;
+        text-align: right;
+        color: $color;
+        font-size: 20px;
+    }
+
+    .btn-home {
+        float: right;
     }
 
     .bg-img {
@@ -165,10 +181,175 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 800px;
+        height: calc(100% + 180px);
         position: absolute;
         top: -120px;
         z-index: -1;
     }
 }
 
+#sobre {
+    margin-top: 100px;
+
+    .mvv {
+
+        .mvv-box {
+            width: 300px;
+            height: 280px;
+            border: 4px solid #72a5b8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #72a5b8;
+            margin: auto;
+            border-radius: 5px;
+
+            .title-mvv {
+                font-weight: 700;
+                font-size: 35px;
+
+                &::after {
+                    content: "";
+                    width: 200px;
+                    height: 2px;
+                    background-color: #72a5b8;
+                    display: block;
+                    margin: 10px 0;
+                }
+            }
+
+            .txt-mvv {
+                padding: 0 30px;
+            }
+            
+        }
+
+        .img-valores {
+
+            img {
+                width: 100%;
+                max-width: 350px;
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+}
+
+#business {
+    background-color: #72a5b8;
+    margin-top: 50px;
+
+    .box-business {
+        padding: 3.5rem;
+
+        .txt-business {
+            color: #fff;
+        }
+    }
+
+    .img-business {
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#planos {
+    margin-top: 50px;
+
+    .planos-row {
+
+        .txt-planos {
+            font-size: 16px;
+            color: #9AA0A4;
+            text-align: center;
+        }
+    }
+
+    .remuneracao {
+        text-align: center;
+        color: #72A5B8;
+        font-weight: 700;
+        margin-top: 30px;
+    }
+
+    .box-remuneracao {
+        text-align: center;
+        background-color: #72a5b8;
+        padding: 40px;
+
+        .nb {
+            background-color: #fff;
+            display: block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-weight: 700;
+            color: #72a5b8;
+            margin: 0 auto 10px;
+            font-size: 20px;
+        }
+
+        .nb-txt {
+            width: 100%;
+            margin: 0 auto;
+            color: #fff;
+            padding: 0 10px;
+        }
+    }
+
+    .box-remuneracao-2 {
+
+        img {
+            width: 100%;
+        }
+
+        .wrap {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 0 100px;
+            text-align: center;
+
+            p {
+                font-size: 20px;
+                color: $color;
+            }
+        }
+    }
+
+    .card-planos {
+        margin-top: 50px;
+
+        .card {
+            border-radius: 5px;
+            background-color: $color;
+
+            img {
+                width: 100%;
+            }
+
+            .card-description {
+                padding: 30px 40px;
+                text-align: center;
+
+                .title-card {
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: #fff;
+                }
+
+                .txt-card {
+                    color: #fff;
+                    font-size: 14px;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}

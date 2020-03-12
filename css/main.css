@@ -5,12 +5,15 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 #header {
@@ -46,6 +49,7 @@ body {
 
 .navbar .navbar-brand img {
   width: 100%;
+  max-width: 100px;
 }
 
 .navbar .navbar-toggler {
@@ -62,6 +66,7 @@ body {
   opacity: 0.5;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  z-index: 999;
 }
 
 .navbar .back-to-top button {
@@ -145,12 +150,24 @@ body {
   position: relative;
 }
 
-#home .title {
-  font-size: 60px;
+#home .title-home {
+  font-size: 50px;
   font-weight: 700;
   text-align: right;
   color: #72A5B8;
   text-shadow: 0px 0px 15px #fff;
+}
+
+#home .text-home {
+  width: 70%;
+  margin-left: auto;
+  text-align: right;
+  color: #72A5B8;
+  font-size: 20px;
+}
+
+#home .btn-home {
+  float: right;
 }
 
 #home .bg-img {
@@ -158,9 +175,174 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 800px;
+  height: calc(100% + 180px);
   position: absolute;
   top: -120px;
   z-index: -1;
+}
+
+#sobre {
+  margin-top: 100px;
+}
+
+#sobre .mvv .mvv-box {
+  width: 300px;
+  height: 280px;
+  border: 4px solid #72a5b8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #72a5b8;
+  margin: auto;
+  border-radius: 5px;
+}
+
+#sobre .mvv .mvv-box .title-mvv {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#sobre .mvv .mvv-box .title-mvv::after {
+  content: "";
+  width: 200px;
+  height: 2px;
+  background-color: #72a5b8;
+  display: block;
+  margin: 10px 0;
+}
+
+#sobre .mvv .mvv-box .txt-mvv {
+  padding: 0 30px;
+}
+
+#sobre .mvv .img-valores img {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  display: block;
+}
+
+#business {
+  background-color: #72a5b8;
+  margin-top: 50px;
+}
+
+#business .box-business {
+  padding: 3.5rem;
+}
+
+#business .box-business .txt-business {
+  color: #fff;
+}
+
+#business .img-business img {
+  width: 100%;
+}
+
+#planos {
+  margin-top: 50px;
+}
+
+#planos .planos-row .txt-planos {
+  font-size: 16px;
+  color: #9AA0A4;
+  text-align: center;
+}
+
+#planos .remuneracao {
+  text-align: center;
+  color: #72A5B8;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+#planos .box-remuneracao {
+  text-align: center;
+  background-color: #72a5b8;
+  padding: 40px;
+}
+
+#planos .box-remuneracao .nb {
+  background-color: #fff;
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #72a5b8;
+  margin: 0 auto 10px;
+  font-size: 20px;
+}
+
+#planos .box-remuneracao .nb-txt {
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0 10px;
+}
+
+#planos .box-remuneracao-2 img {
+  width: 100%;
+}
+
+#planos .box-remuneracao-2 .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 100px;
+  text-align: center;
+}
+
+#planos .box-remuneracao-2 .wrap p {
+  font-size: 20px;
+  color: #72A5B8;
+}
+
+#planos .card-planos {
+  margin-top: 50px;
+}
+
+#planos .card-planos .card {
+  border-radius: 5px;
+  background-color: #72A5B8;
+}
+
+#planos .card-planos .card img {
+  width: 100%;
+}
+
+#planos .card-planos .card .card-description {
+  padding: 30px 40px;
+  text-align: center;
+}
+
+#planos .card-planos .card .card-description .title-card {
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+}
+
+#planos .card-planos .card .card-description .txt-card {
+  color: #fff;
+  font-size: 14px;
+  line-height: 2;
 }
 /*# sourceMappingURL=main.css.map */
