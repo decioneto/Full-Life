@@ -157,7 +157,7 @@ body {
     position: relative;
 
     .title-home {
-        font-size: 50px;
+        font-size: 3em;
         font-weight: $bold;
         text-align: right;
         color: $color;
@@ -169,7 +169,7 @@ body {
         margin-left: auto;
         text-align: right;
         color: $color;
-        font-size: 20px;
+        font-size: 1.1em;
     }
 
     .btn-home {
@@ -208,7 +208,7 @@ body {
 
             .title-mvv {
                 font-weight: 700;
-                font-size: 35px;
+                font-size: 2.2em;
 
                 &::after {
                     content: "";
@@ -317,7 +317,7 @@ body {
             text-align: center;
 
             p {
-                font-size: 20px;
+                font-size: 1.1em;
                 color: $color;
             }
         }
@@ -335,11 +335,11 @@ body {
             }
 
             .card-description {
-                padding: 30px 40px;
+                padding: 30px 40px 0;
                 text-align: center;
 
                 .title-card {
-                    font-size: 25px;
+                    font-size: 1.5em;
                     font-weight: 700;
                     color: #fff;
                 }
@@ -350,6 +350,87 @@ body {
                     line-height: 2;
                 }
             }
+        }
+    }
+
+    .banner-footer {
+        margin-top: 40px;
+        position: relative;
+
+        .txt-banner-footer {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                font-size: 3.5em;
+                font-weight: 700;
+                color: #fff;
+                text-align: center;
+            }
+        }
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
+#contato {
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: $color;
+    padding: 30px 30px 0;
+    text-align: center;
+    margin-top: 40px;
+
+    .txt-footer {
+        color: #fff;
+        font-size: 14px;
+        padding: 0 50px;
+    }
+
+    .redes-footer {
+        
+        h4 {
+            font-size: 1.1em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .redes-list {
+            list-style: none;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+
+            li {
+                margin: 0 10px;
+
+                a {
+                    color: #fff;
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+    .credito {
+        font-size: 12px;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        img {
+            width: 45px;
+            margin: 5px auto;
         }
     }
 }

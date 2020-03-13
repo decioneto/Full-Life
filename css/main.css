@@ -151,7 +151,7 @@ body {
 }
 
 #home .title-home {
-  font-size: 50px;
+  font-size: 3em;
   font-weight: 700;
   text-align: right;
   color: #72A5B8;
@@ -163,7 +163,7 @@ body {
   margin-left: auto;
   text-align: right;
   color: #72A5B8;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 
 #home .btn-home {
@@ -210,7 +210,7 @@ body {
 
 #sobre .mvv .mvv-box .title-mvv {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 2.2em;
 }
 
 #sobre .mvv .mvv-box .title-mvv::after {
@@ -312,7 +312,7 @@ body {
 }
 
 #planos .box-remuneracao-2 .wrap p {
-  font-size: 20px;
+  font-size: 1.1em;
   color: #72A5B8;
 }
 
@@ -330,12 +330,12 @@ body {
 }
 
 #planos .card-planos .card .card-description {
-  padding: 30px 40px;
+  padding: 30px 40px 0;
   text-align: center;
 }
 
 #planos .card-planos .card .card-description .title-card {
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: 700;
   color: #fff;
 }
@@ -344,5 +344,105 @@ body {
   color: #fff;
   font-size: 14px;
   line-height: 2;
+}
+
+#planos .banner-footer {
+  margin-top: 40px;
+  position: relative;
+}
+
+#planos .banner-footer .txt-banner-footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#planos .banner-footer .txt-banner-footer h2 {
+  font-size: 3.5em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+#planos .banner-footer img {
+  width: 100%;
+}
+
+#contato {
+  margin-top: 40px;
+}
+
+.footer {
+  background-color: #72A5B8;
+  padding: 30px 30px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer .txt-footer {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 50px;
+}
+
+.footer .redes-footer h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.footer .redes-footer .redes-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .redes-footer .redes-list li {
+  margin: 0 10px;
+}
+
+.footer .redes-footer .redes-list li a {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.footer .credito {
+  font-size: 12px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .credito img {
+  width: 45px;
+  margin: 5px auto;
 }
 /*# sourceMappingURL=main.css.map */
