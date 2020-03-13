@@ -379,6 +379,9 @@ body {
 
 #planos .banner-footer img {
   width: 100%;
+  min-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #contato {

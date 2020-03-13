@@ -1,0 +1,55 @@
+@media (min-width: 1440px) {
+    #home .bg-img {
+        height: calc(100% + 300px) !important;
+    }
+
+    #sobre {
+        margin-top: 230px !important;
+    }
+}
+
+@media (max-width: 1180px) {
+
+    body {
+        font-size: 15px !important;
+    }
+
+    #home .bg-img {
+        position: relative;
+        height: 470px;
+        width: 100%;
+        display: block;
+    }
+
+    #sobre {
+        margin: 0;
+    }
+
+    #home .text-home {
+            width: 100% !important;
+    }
+}
+
+@media (max-width: 750px ) {
+    #planos .banner-footer .txt-banner-footer h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 5200px ) {
+    #planos .box-remuneracao-2 .wrap {
+        padding: 0 30px;
+    }
+
+    .footer .txt-footer {
+        padding: 0;
+    }
+
+    #planos .banner-footer .txt-banner-footer h2 {
+        font-size: 1.5em;
+    }
+
+    #sobre .mvv .mvv-box {
+        width: 100%;
+    }
+}
